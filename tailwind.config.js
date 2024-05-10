@@ -17,8 +17,8 @@ module.exports = {
       700: ["700"],
     },
     screens: {
-      max320: { max: "319.98px" },
-      // => @media (max-width: 319.98px) { ... }
+      max320: { max: "320px" },
+      // => @media (max-width: 320px) { ... }
       mobile1: "320px",
       // => @media (min-width: 320px) { ... }
       mobile2: "375px",

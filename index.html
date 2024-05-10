@@ -22,23 +22,66 @@
     </style> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- * Sign-up form start -->
+  <body class="bg-Charcoal-Grey">
+    <div
+      class="bg-White min-h-screen max320:w-[320px] mobile1:min-w-[320px] mobile2:max-w-[375px]"
+    >
+      <!-- * Sign-up form start -->
+      <section>
+        <img
+          src="./src/assets/images/illustration-sign-up-mobile.svg"
+          alt="mobile sign up illustration"
+        />
+      </section>
 
-    <!-- Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com Subscribe to
-    monthly newsletter -->
+      <main
+        class="mx-6 mt-9 font-sans font-400 grid gap-5 content-evenly h-full"
+      >
+        <h1 class="text-[42px] font-700">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="flex items-start">
+          <img src="./src/assets/images/icon-list.svg" alt="list icon" />
+          <p class="ml-4">Product discovery and building what matters</p>
+        </div>
+        <div class="flex items-start">
+          <img src="./src/assets/images/icon-list.svg" alt="list icon" />
+          <p class="ml-4">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex items-start">
+          <img src="./src/assets/images/icon-list.svg" alt="list icon" />
+          <p class="ml-4">And much more!</p>
+        </div>
+        <form class="mt-4">
+          <label for="#email" class="text-xs font-700">Email address</label>
+          <input
+            id="#email"
+            required
+            type="email"
+            name="email"
+            placeholder="email@company.com"
+            class="border min-w-full border-Grey rounded-lg p-4 mt-2 mb-6 outline-none focus:border-[#000]"
+          />
+          <button
+            type="submit"
+            class="bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg font-700 focus:bg-Tomato transition ease-in-out duration-400"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </main>
 
-    <!-- * Sign-up form end -->
+      <!-- * Sign-up form end -->
 
-    <!-- * Success message start -->
+      <!-- * Success message start -->
 
-    <!-- Thanks for subscribing! A confirmation email has been sent to
+      <main>
+        <!-- Thanks for subscribing! A confirmation email has been sent to
     ash@loremcompany.com. Please open it and click the button inside to confirm
     your subscription. Dismiss message -->
+      </main>
 
-    <!-- * Success message end -->
+      <!-- * Success message end -->
+    </div>
 
     <!-- <div class="attribution">
       Challenge by
