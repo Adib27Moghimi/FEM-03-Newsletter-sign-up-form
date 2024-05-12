@@ -17,10 +17,12 @@ module.exports = {
       700: ["700"],
     },
     screens: {
-      max320: { max: "320px" },
-      // => @media (max-width: 320px) { ... }
+      max319: { max: "319px" },
+      // => @media (max-width: 319px) { ... }
       mobile1: "320px",
       // => @media (min-width: 320px) { ... }
+      max374: { max: "374px" },
+      // => @media (max-width: 374px) { ... }
       mobile2: "375px",
       // => @media (min-width: 375px) { ... }
       tablet: "640px",
