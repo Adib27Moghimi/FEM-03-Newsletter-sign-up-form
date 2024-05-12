@@ -27,14 +27,14 @@
       class="bg-White min-h-screen max320:w-[320px] mobile1:min-w-[320px] mobile2:max-w-[375px]"
     >
       <!-- * Sign-up form start -->
-      <section>
+      <!-- <section>
         <img
           src="./src/assets/images/illustration-sign-up-mobile.svg"
           alt="mobile sign up illustration"
         />
-      </section>
+      </section> -->
 
-      <main
+      <!-- <main
         class="mx-6 mt-9 font-sans font-400 grid gap-5 content-evenly h-full"
       >
         <h1 class="text-[42px] font-700">Stay updated!</h1>
@@ -68,16 +68,27 @@
             Subscribe to monthly newsletter
           </button>
         </form>
-      </main>
+      </main> -->
 
       <!-- * Sign-up form end -->
 
       <!-- * Success message start -->
-
-      <main>
-        <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
+      <main class="py-9 mx-6 font-sans font-700 grid h-[863px]">
+        <article class="place-self-center grid gap-7">
+          <img src="./src/assets/images/icon-success.svg" alt="" />
+          <h1 class="text-[38px]/[40px]">Thanks for subscribing!</h1>
+          <p class="font-400">
+            A confirmation email has been sent to
+            <a href="#" class="font-700">ash@loremcompany.com</a>. Please open
+            it and click the button inside to confirm your subscription.
+          </p>
+        </article>
+        <button
+          type="submit"
+          class="bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg focus:bg-Tomato transition ease-in-out duration-400 place-self-end"
+        >
+          Dismiss message
+        </button>
       </main>
 
       <!-- * Success message end -->
