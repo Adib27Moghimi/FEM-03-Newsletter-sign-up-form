@@ -24,23 +24,27 @@
   </head>
   <body class="bg-Charcoal-Grey flex justify-center items-center min-h-screen">
     <div
-      class="bg-White max319:min-w-[319px] max374:min-h-screen max374:max-w-[374px] mobile2:max-w-[842px] mobile2:rounded-3xl mobile2:p-5 mobile2:flex"
+      class="overall-wrapper bg-White max319:min-w-[319px] max374:min-h-screen max374:max-w-[374px] mobile2:max-w-[842px] mobile2:rounded-3xl mobile2:p-5 mobile2:flex"
     >
       <!-- * Sign-up form start -->
-      <section class="w-full order-2 mobile2:flex mobile2:flex-col">
+      <section
+        class="image-wrapper w-full order-2 mobile2:flex mobile2:flex-col mobile2:rounded-2xl"
+      >
         <img
           src="./src/assets/images/illustration-sign-up-mobile.svg"
           alt="mobile sign up illustration"
-          class="mobile2:hidden"
+          class="signup-image-1 mobile2:hidden"
         />
         <img
           src="./src/assets/images/illustration-sign-up-desktop.svg"
           alt="mobile2 sign up illustration"
-          class="hidden mobile2:block mobile2:rounded-2xl mobile2:self-end"
+          class="signup-image-2 hidden mobile2:block mobile2:self-end mobile2:rounded-2xl mobile2:min-h-full mobile2:min-w-max"
         />
       </section>
 
-      <main class="mx-6 pt-7 pb-9 font-sans font-400 grid gap-5 content-evenly">
+      <main
+        class="Signup-wrapper mx-6 pt-7 pb-9 font-sans font-400 grid gap-5 content-evenly"
+      >
         <h1 class="text-[42px] font-700">Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
         <div class="flex items-start">
@@ -55,19 +59,21 @@
           <img src="./src/assets/images/icon-list.svg" alt="list icon" />
           <p class="ml-4">And much more!</p>
         </div>
-        <form class="mt-2">
-          <label for="#email" class="text-xs font-700">Email address</label>
+        <form class="form mt-2">
+          <label for="#email" class="email-label text-xs font-700"
+            >Email address</label
+          >
           <input
             id="#email"
             required
             type="email"
             name="email"
             placeholder="email@company.com"
-            class="border min-w-full border-Grey rounded-lg p-4 mt-2 mb-6 outline-none active:border-[#000]"
+            class="email-input border min-w-full border-Grey rounded-lg p-4 mt-2 mb-6 outline-none active:border-[#000]"
           />
           <button
             type="submit"
-            class="bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg font-700 active:bg-Tomato active:shadow-[0_20px_30px_-15px_rgba(0,0,0,0.05)] active:shadow-Tomato transition ease-in-out duration-400"
+            class="submit-button bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg font-700 active:bg-Tomato active:shadow-[0_20px_30px_-15px_rgba(0,0,0,0.05)] active:shadow-Tomato transition ease-in-out duration-400"
           >
             Subscribe to monthly newsletter
           </button>
@@ -78,22 +84,24 @@
 
       <!-- * Success message start -->
       <!-- <main
-        class="py-9 mx-6 font-sans font-700 grid gap-7 max374:min-h-screen mobile2:max-w-[370px]"
+        class="Success-wrapper py-9 mx-6 font-sans font-700 grid gap-7 max374:min-h-screen mobile2:max-w-[370px]"
       >
-        <article class="place-self-center grid gap-7">
-          <img src="./src/assets/images/icon-success.svg" alt="" />
+        <article class="confirmation-part place-self-center grid gap-7">
+          <img src="./src/assets/images/icon-success.svg" alt="success icon" />
           <h1 class="text-[38px]/[40px] mobile2:text-5xl">
             Thanks for subscribing!
           </h1>
-          <p class="font-400">
+          <p class="confirmation-text font-400">
             A confirmation email has been sent to
-            <a href="#" class="font-700">ash@loremcompany.com</a>. Please open
-            it and click the button inside to confirm your subscription.
+            <a href="#" class="email-link font-700"
+              ><span class="confirmation-email">ash@loremcompany.com</span></a
+            >. Please open it and click the button inside to confirm your
+            subscription.
           </p>
         </article>
         <button
           type="submit"
-          class="bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg active:bg-Tomato active:shadow-[0_20px_30px_-15px_rgba(0,0,0,0.05)] active:shadow-Tomato transition ease-in-out duration-400 place-self-end"
+          class="Dismiss-button bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg active:bg-Tomato active:shadow-[0_20px_30px_-15px_rgba(0,0,0,0.05)] active:shadow-Tomato transition ease-in-out duration-400 place-self-end"
         >
           Dismiss message
         </button>
