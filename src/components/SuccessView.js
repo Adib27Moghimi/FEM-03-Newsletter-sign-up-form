@@ -2,8 +2,9 @@
 
 export default function SuccessView() {
   return `
+    <div class="Success-wrapper View-wrapper">
       <main
-        class="Success-wrapper py-9 mx-6 font-sans font-700 grid gap-7 max374:min-h-screen mobile2:max-w-[370px]"
+        class="Success-main-wrapper py-9 mx-6 font-sans font-700 grid gap-7 max374:min-h-screen mobile2:max-w-[370px]"
       >
         <article class="confirmation-part place-self-center grid gap-7">
           <img src="./src/assets/images/icon-success.svg" alt="success icon" />
@@ -18,11 +19,9 @@ export default function SuccessView() {
             subscription.
           </p>
         </article>
-        <button
-          type="submit"
-          class="Dismiss-button bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg active:bg-Tomato active:shadow-[0_20px_30px_-15px_rgba(0,0,0,0.05)] active:shadow-Tomato transition ease-in-out duration-400 place-self-end"
-        >
+        <button type="submit" class="Dismiss-button btn place-self-end">
           Dismiss message
         </button>
-      </main>`;
+      </main>
+    </div>`;
 }

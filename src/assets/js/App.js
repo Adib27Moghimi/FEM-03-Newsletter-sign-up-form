@@ -3,12 +3,11 @@ import SuccessView from "../../components/SuccessView.js";
 
 //// ! Selections
 const body = document.querySelector("body");
-const overallWrapper = document.querySelector(".overall-wrapper");
 
 //// ! Functions
 function invalidEmailUI(labelError, emailInput) {
   labelError.textContent = "Please inter a valid email!";
-  emailInput.classList.add("bg-Tomato text-White");
+  emailInput.classList.add("input-error");
 }
 
 function emailCorrectFormat(email) {
@@ -22,8 +21,8 @@ let email;
 
 function createView() {
   if (state === "signup") {
-    overallWrapper.innerHTML = "";
-    overallWrapper.insertAdjacentHTML("afterbegin", SignupView());
+    body.innerHTML = "";
+    body.insertAdjacentHTML("afterbegin", SignupView());
 
     const form = document.querySelector(".form");
     const emailInput = document.querySelector(".email-input");
@@ -44,8 +43,8 @@ function createView() {
   }
 
   if (state === "success") {
-    overallWrapper.innerHTML = "";
-    overallWrapper.insertAdjacentHTML("afterbegin", SuccessView());
+    body.innerHTML = "";
+    body.insertAdjacentHTML("afterbegin", SuccessView());
 
     const confirmationEmail = document.querySelector(".confirmation-email");
     const DismissButton = document.querySelector(".Dismiss-button");

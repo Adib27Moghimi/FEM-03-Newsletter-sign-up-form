@@ -5,7 +5,25 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-Charcoal-Grey flex justify-center items-center min-h-screen;
+  }
   body p {
     @apply text-[16px];
+  }
+}
+
+@layer components {
+  .View-wrapper {
+    @apply bg-White max319:min-w-[319px] max374:min-h-screen max374:max-w-[374px] mobile2:rounded-3xl mobile2:p-5 mobile2:flex;
+  }
+  .btn {
+    @apply bg-Dark-Slate-Grey text-White text-base text-center py-5 min-w-full rounded-lg active:bg-Tomato active:shadow-[0_20px_30px_-15px_rgba(0,0,0,0.05)] active:shadow-Tomato transition ease-in-out duration-300;
+  }
+  .input {
+    @apply border border-Grey min-w-full rounded-lg outline-none focus:border-[#000] p-4;
+  }
+  .input-error {
+    @apply border-Tomato bg-[#ffe7e7fc] text-[#dd6e6efc] focus:border-[#dd6e6efc];
   }
 }
