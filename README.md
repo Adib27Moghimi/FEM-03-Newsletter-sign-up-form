@@ -34,15 +34,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [link](https://www.frontendmentor.io/solutions/responsive-subscription-newsletter-with-html-css-javascript-RURbOCDAr-)
+- Live Site URL: [link](https://adib27moghimi.github.io/FEM-03-Newsletter-sign-up-form/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS3
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
